@@ -1,0 +1,37 @@
+<html>
+<head>
+	<style>
+		#font{
+            margin-top:20px;
+	}
+	</style>
+    </head>
+    <body>
+    
+    <div id=font>
+
+    	<button onclick = "display('whatsapp')">whatsapp</button>
+    	<button onclick = "display('facebook')">facebook</button>
+    	<button onclick = "display('twitter')">twitter</button>
+
+    </div>
+    
+
+    <div style="margin-top:50px" align="center">	
+    	<img id="imgDisplayStage" src="whats.png" alt="Whatsapp Icon" height="250" width="300">
+    </div>
+    <script type="text/javascript">
+function display(picName)
+{
+	if(picName==="whatsapp")
+	{
+		document.getElementById("imgDisplayStage").src="whats.png";
+	} else if (picName === "facebook") {
+		document.getElementById("imgDisplayStage").src="facebook.png";
+	} else {
+		document.getElementById("imgDisplayStage").src="twitter.png";
+	}
+}
+    </script>
+    </body>
+</html>
